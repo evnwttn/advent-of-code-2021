@@ -162,14 +162,21 @@ function partOne() {
   }
 }
 
+// sliding set of 3, amount of time sum of 3 increases
+
 function partTwo() {
   let window = [];
+  let total = 0;
   for (let i = 0; i < depth.length - 2; i++) {
     window.push(depth[i] + depth[i + 1] + depth[i + 2]);
-    console.log(window[i]);
+  }
+
+  for (let i = 1; i <= depth.length; i++) {
+    if (window[i] > window[i - 1]) {
+      total++;
+    }
+    console.log(total);
   }
 }
-
-partOne();
 
 partTwo();
