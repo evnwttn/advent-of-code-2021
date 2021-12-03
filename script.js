@@ -154,13 +154,22 @@ const depth = [
 ];
 
 function partOne() {
-  var total = 0;
+  let total = 0;
   for (let i = 1; i <= depth.length; i++) {
     if (depth[i] > depth[i - 1]) {
       total++;
     }
   }
-  console.log(total);
+}
+
+function partTwo() {
+  let window = [];
+  for (let i = 0; i < depth.length - 2; i++) {
+    window.push(depth[i] + depth[i + 1] + depth[i + 2]);
+    console.log(window[i]);
+  }
 }
 
 partOne();
+
+partTwo();
