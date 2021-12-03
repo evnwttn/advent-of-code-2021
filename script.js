@@ -163,6 +163,7 @@ function partOne() {
 }
 
 // sliding set of 3, amount of time sum of 3 increases
+// push array along, compare each to the last same way as before
 
 function partTwo() {
   let window = [];
