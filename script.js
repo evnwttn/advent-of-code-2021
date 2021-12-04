@@ -1024,9 +1024,9 @@ function partOne() {
       down += input[i].value;
     }
   }
-  console.log(forward);
-  console.log(up);
-  console.log(down);
+  let horizontal = forward;
+  let depth = 0 + down - up;
+  console.log(depth * horizontal);
 }
 
 partOne();
