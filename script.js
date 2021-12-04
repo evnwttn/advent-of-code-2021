@@ -1001,32 +1001,24 @@ let input = [
   { direction: "forward", value: 8 },
 ];
 
-// function partOne() {
-//   let sum = 0;
-//   for (let i = 0; i < input.length; i++) {
-//     if (input[i].direction === "forward") {
-//       console.log(sum + input[i].value);
-//       break;
-//     }
-//   }
-// }
-
 function partOne() {
   let forward = 0;
-  let up = 0;
-  let down = 0;
+  let depth = 0;
+  let aim = 0;
   for (var i in input) {
     if (input[i].direction === "forward") {
       forward += input[i].value;
+      let factor = aim * input[i].value;
+      depth += factor;
     } else if (input[i].direction === "up") {
-      up += input[i].value;
+      aim -= input[i].value;
     } else if (input[i].direction === "down") {
-      down += input[i].value;
+      aim += input[i].value;
     }
   }
-  let horizontal = forward;
-  let depth = 0 + down - up;
-  console.log(depth * horizontal);
+  console.log(depth);
+  console.log(forward);
+  console.log(depth * forward);
 }
 
 partOne();
