@@ -1,4 +1,4 @@
-input = [
+let input = [
   { direction: "forward", value: 5 },
   { direction: "forward", value: 1 },
   { direction: "forward", value: 3 },
@@ -1001,6 +1001,32 @@ input = [
   { direction: "forward", value: 8 },
 ];
 
+// function partOne() {
+//   let sum = 0;
+//   for (let i = 0; i < input.length; i++) {
+//     if (input[i].direction === "forward") {
+//       console.log(sum + input[i].value);
+//       break;
+//     }
+//   }
+// }
+
 function partOne() {
-  console.log("yo");
+  let forward = 0;
+  let up = 0;
+  let down = 0;
+  for (var i in input) {
+    if (input[i].direction === "forward") {
+      forward += input[i].value;
+    } else if (input[i].direction === "up") {
+      up += input[i].value;
+    } else if (input[i].direction === "down") {
+      down += input[i].value;
+    }
+  }
+  console.log(forward);
+  console.log(up);
+  console.log(down);
 }
+
+partOne();
