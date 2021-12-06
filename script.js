@@ -1000,3 +1000,11 @@ input = [
   "100001111011",
   "111101110001",
 ];
+
+function partOne() {
+  for (i = 0; i < input.length; i++) {
+    console.log(input[i].indexOf(0));
+  }
+}
+
+partOne();
