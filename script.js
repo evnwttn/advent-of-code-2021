@@ -1002,11 +1002,14 @@ input = [
 ];
 
 function partOne() {
-  for (i = 0; i < input.length; i++) {
-    console.log(input[i].indexOf(0));
+  for (i of input) {
+    if (i.indexOf("0") !== 0) {
+      console.log("that be one");
+    } else {
+      console.log("that be zero");
+    }
   }
 }
 
 partOne();
-
-// been working on a design project in adobe XD, can't get them green boxes.
+console.log("yoo");
