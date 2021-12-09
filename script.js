@@ -1001,15 +1001,17 @@ input = [
   "111101110001",
 ];
 
-function partOne() {
-  for (i of input) {
-    if (i.indexOf("0") !== 0) {
-      console.log("that be one");
-    } else {
-      console.log("that be zero");
-    }
-  }
-}
+// function partOne() {
+//   let one = 0;
+//   let zero = 0;
+//   for (i of input) {
+//     if (i.indexOf("6") !== 0) {
+//       one++;
+//     } else {
+//       zero++;
+//     }
+//   }
+//   console.log(`one:${one} and zero:${zero}`);
+// }
 
 partOne();
-console.log("yoo");
