@@ -1014,15 +1014,27 @@ input = [
 // }
 
 function partOne() {
+  let zero = 0;
+  let one = 0;
   for (i of input) {
     if (i.indexOf("0") === 0) {
       console.log(`zero! ${i}`);
+      zero++;
     } else {
       if (i.indexOf("1") === 0) {
         console.log(`one! ${i}`);
+        one++;
       }
     }
   }
+  console.log(`zero: ${zero}`);
+  console.log(`one: ${one}`);
+  if (zero > one) {
+    console.log("it's a zero!");
+  } else {
+    console.log("it's a one!");
+  }
+  console.log("1XXXXXXXXXXX");
 }
 
 partOne();
