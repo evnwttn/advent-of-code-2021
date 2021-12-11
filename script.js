@@ -1005,13 +1005,22 @@ input = [
 //   let one = 0;
 //   let zero = 0;
 //   for (i of input) {
-//     if (i.indexOf("6") !== 0) {
-//       one++;
+//     if (i.indexOf("0") !== 0) {
+//       console.log(`!== 0 ${input[i]}`);
 //     } else {
-//       zero++;
+//       console.log(`=== ${input[i]}`);
 //     }
 //   }
-//   console.log(`one:${one} and zero:${zero}`);
 // }
+
+function partOne() {
+  for (i of input) {
+    if (i.indexOf("0") === 0) {
+      console.log("zero!");
+    } else {
+      console.log(i);
+    }
+  }
+}
 
 partOne();
