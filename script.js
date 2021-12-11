@@ -1016,9 +1016,11 @@ input = [
 function partOne() {
   for (i of input) {
     if (i.indexOf("0") === 0) {
-      console.log("zero!");
+      console.log(`zero! ${i}`);
     } else {
-      console.log(i);
+      if (i.indexOf("1") === 0) {
+        console.log(`one! ${i}`);
+      }
     }
   }
 }
