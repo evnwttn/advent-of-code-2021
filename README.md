@@ -3,5 +3,4 @@ better late than never
 
 day 1 - ⭐⭐ <br />
 day 2 - ⭐⭐ <br />
-
-returning to this to binge over xmas break (dec 22)
+day 3 - ⭐
